@@ -4,6 +4,11 @@ PostgreSQL имеет официальный образ на [Docker Hub](https:
 
 В данном туториале мы будем использовать сборку на Alpine с тэгом `postgres:14-alpine`, но вы можете выбрать любой другой, наиболее подходящий вашим потребностям.
 
+_Примечание:_ Если у вас еще не установлен Docker Desktop, то сейчас самое время его установить!
+- [Install Docker Desktop on Mac](https://docs.docker.com/desktop/mac/install/)
+- [Install Docker Desktop on Windows](https://docs.docker.com/desktop/windows/install/)
+
+
 ## Запуск контейнера с помощью `docker run`
 Создать и запустить наш PostgreSQL контейнер можно с помощью команды `docker run`:
 
