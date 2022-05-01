@@ -8,12 +8,7 @@ PostgreSQL имеет официальный образ на [Docker Hub](https:
 Создать и запустить наш PostgreSQL контейнер можно с помощью команды `docker run`:
 
 ```bash
-docker run -d 
-    --name postgres 
-    -p 5432:5432
-    -e POSTGRES_PASSWORD=<password> 
-    -v postgres:/var/lib/postgresql/data 
-    postgres:14-alpine
+docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=<password> -v postgres:/var/lib/postgresql/data postgres:14-alpine
 ```
 
 Образ PostgreSQL использует несколько переменных окружения, большинство из которых можно опустить. Единственной **обязательной** переменной является `POSTGRES_PASSWORD`. Эта переменная будет определять пароль для дефолтного суперпользователя с именем `postgres`. Имя пользователя также может быть задано через переменную `POSTGRES_USER`. Все эти переменные мы передаем с использованием флага `-e`.
