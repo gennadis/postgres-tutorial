@@ -43,6 +43,11 @@ volumes:
 ```
 В данном случае переменные окружения мы передаем из `.env` файла, расположенного в той же директории, что и создаваемый нами `docker-compose.yaml` файл. Напомню, что единственной **обязательной** переменной является `POSTGRES_PASSWORD`. Про остальные переменные вы можете почитать на [Docker hub](https://hub.docker.com/_/postgres) в разделе Environment Variables.
 
+Содержание `.env`:
+```
+POSTGRES_PASSWORD=<password>
+```
+
 Запустим контейнер с помощью созданного файла:
 ```
 docker compose -f docker-compose.yaml up -d --build
