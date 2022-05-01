@@ -66,9 +66,12 @@ docker exec -it postgres psql -U postgres
 ```
 docker compose -f docker-compose.yaml exec postgres psql -U postgres
 ```
-Запустив `psql`, проверим версию PostgreSQL:
+Все прошло успешно, если, запустив `psql`, мы увидим приглашение вида:
 ```
-SELECT version();
+psql (14.2)
+Type "help" for help.
+
+postgres=#
 ```
 
 ## Узнать больше
